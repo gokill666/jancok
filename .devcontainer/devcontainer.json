@@ -1,0 +1,24 @@
+{
+  "name": "Ubuntu Codespace with Docker",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "docker-in-docker": "latest",
+    "ghcr.io/shyim/devcontainers-features/php:0": {},
+    "ghcr.io/KusionStack/devcontainer-features/kusion:0": {},
+    "ghcr.io/devcontainers-extra/features/apt-get-packages:1": {},
+    "ghcr.io/devcontainers-extra/features/apt-packages:1": {},
+    "ghcr.io/bascodes/devcontainer-features/cf-warp-cli:1": {}
+  },
+  "privileged": true,
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      },
+      "extensions": [
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  },
+  "remoteUser": "vscode"
+}
